@@ -51,16 +51,18 @@ public class LoginPage extends BaseUtils {
         PageFactory.initElements(driver, this);
     }
 
-    public void loadLoginPage(){
+    public void loadLoginPage() throws InterruptedException {
+        Thread.sleep(3000);
         webDriverWait.until(ExpectedConditions.visibilityOf(username));
         webDriverWait.until(ExpectedConditions.visibilityOf(password));
         webDriverWait.until(ExpectedConditions.visibilityOf(loginButton));
 
     }
 
-    public void login(String uname, String pass){
+    public HomePage login(String uname, String pass){
         webDriverWait.until(ExpectedConditions.visibilityOf(username)).sendKeys(uname);
         webDriverWait.until(ExpectedConditions.visibilityOf(password)).sendKeys(pass);
         webDriverWait.until(ExpectedConditions.visibilityOf(loginButton)).click();
+        return new HomePage(driver);
     }
 }

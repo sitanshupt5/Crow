@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import pages.LandingPage;
 
 import java.io.File;
@@ -27,6 +28,7 @@ public class BaseUtils {
 
     public static WebDriver driver;
     public Properties properties;
+    public static Actions actions;
     public static LandingPage landingPage;
     public static ExtentHtmlReporter report;
     public static ExtentReports extent;
@@ -42,6 +44,7 @@ public class BaseUtils {
         {
             driver = WebDriverManager.chromedriver().create();
             driver.manage().window().maximize();
+            actions = new Actions(driver);
         }
     }
 

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 19, 2022 09:37:36 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 21, 2022 04:17:23 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 19, 2022 09:37:36 PM</h3>
+<h3>May 21, 2022 04:17:23 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 19, 2022 09:38:41 PM</h3>
+<h3>May 21, 2022 04:18:24 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='50%'><b>1</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='95%'><b>19</b> steps passed</small></div>
+<div><small data-tooltip='83%'><b>15</b> steps passed</small></div>
 <div>
 <small data-tooltip='5%'><b>1</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"To verify cucumber functionalities":62.9
+"To verify cucumber functionalities":58.682
 };
 </script>
 <div class="row">
@@ -177,17 +177,9 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@HappyPath</td>
-<td>1</td>
+<td>@Examples</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@ErrorPath</td>
-<td>0</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
@@ -232,16 +224,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 0,
 failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 19,
+passGrandChild: 15,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -263,7 +255,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@HappyPath</a><a class="dropdown-item" href="#">@ErrorPath</a>
+<a class="dropdown-item" href="#">@Examples</a>
 </ul>
 </li>
 </ul>
@@ -276,7 +268,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">To verify cucumber functionalities</p>
             <p class="text-sm">
-              <span>9:37:38 PM</span> / <span>00:01:02:900</span>
+              <span>4:17:25 PM</span> / <span>00:00:58:682</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -285,9 +277,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">To verify cucumber functionalities</h5>
-<span class='badge badge-success'>05.19.2022 9:37:38 PM</span>
-<span class='badge badge-danger'>05.19.2022 9:38:41 PM</span>
-<span class='badge badge-default'>00:01:02:900</span>
+<span class='badge badge-success'>05.21.2022 4:17:25 PM</span>
+<span class='badge badge-danger'>05.21.2022 4:18:24 PM</span>
+<span class='badge badge-default'>00:00:58:682</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -299,21 +291,30 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To verify the login functionality happy path</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>To add a new Contact</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_is_on_landing_page()">
-                <span>Given User is on Landing Page</span>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>To add a new Contact</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User is on Landing Page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
       <div>image
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
@@ -322,14 +323,14 @@ eventsCount: 5,
 </div>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_clicks_on_the_login_link()">
-                <span>When User clicks on the Login link</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User clicks on the Login link</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
       <div>image
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
@@ -338,14 +339,14 @@ eventsCount: 5,
 </div>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_should_be_navigated_to_login_page()">
-                <span>Then User should be navigated to Login Page</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should be navigated to Login Page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
       <div>image
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../screenshots/embedded3.png' src="../screenshots/embedded3.png">
@@ -354,14 +355,14 @@ eventsCount: 5,
 </div>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)">
-                <span>When User logs in with username "sitanshupt5.sp@gmail.com" and password "Bapuna10@"</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User logs in with username "sitanshupt5.sp@gmail.com" and password "Bapuna10@"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
       <div>image
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../screenshots/embedded4.png' src="../screenshots/embedded4.png">
@@ -370,14 +371,14 @@ eventsCount: 5,
 </div>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_should_be_logged_in_successfully()">
-                <span>Then User should be logged in successfully</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should be logged in successfully</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
       <div>image
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../screenshots/embedded5.png' src="../screenshots/embedded5.png">
@@ -386,28 +387,14 @@ eventsCount: 5,
 </div>
       <div>
       </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="15"><span class="badge log fail-bg mr-2">Fail</span>To verify the login functionality error path</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_is_on_landing_page()">
-                <span>Given User is on Landing Page</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User opens the contacts page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
       <div>image
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../screenshots/embedded6.png' src="../screenshots/embedded6.png">
@@ -416,14 +403,14 @@ eventsCount: 5,
 </div>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_clicks_on_the_login_link()">
-                <span>When User clicks on the Login link</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User clicks on the create button on contacts page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
       <div>image
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../screenshots/embedded7.png' src="../screenshots/embedded7.png">
@@ -432,57 +419,26 @@ eventsCount: 5,
 </div>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_should_be_navigated_to_login_page()">
-                <span>Then User should be navigated to Login Page</span>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then User is navigated to the create contact page</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
-      <div>image
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../screenshots/embedded8.png' src="../screenshots/embedded8.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Steps.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)">
-                <span>When User logs in with username "sitanshupt5.sp@gmail.com" and password "Bapuna01@"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
-      <div>image
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../screenshots/embedded9.png' src="../screenshots/embedded9.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepDefinitions.Steps.user_should_not_be_logged_in_successfully()">
-                <span>Then User should not be logged in successfully</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[text()= "Invalid login"]' (tried for 30 second(s) with 500 milliseconds interval)
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Create New Contact') to be present in element Proxy element for: DefaultElementLocator 'By.xpath: //div[text()= 'ui header item mb5 light-black']' (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at stepDefinitions.Steps.user_should_not_be_logged_in_successfully(Steps.java:50)
-	at ✽.User should not be logged in successfully(file:///D:/New%20Workspace/Crow/src/main/java/features/Module1.feature:18)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()= "Invalid login"]"}
+	at pages.CreateContactsPage.verifyCreateContactPageLoaded(CreateContactsPage.java:171)
+	at stepDefinitions.Steps.user_is_navigated_to_the_create_contact_page(Steps.java:73)
+	at ✽.User is navigated to the create contact page(file:///D:/New%20Workspace/Crow/src/main/java/features/Module1.feature:26)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()= 'ui header item mb5 light-black']"}
   (Session info: chrome=101.0.4951.67)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.4', revision: '535d840ee2'
 System info: host: 'LAPTOP-DTT1M6R1', ip: '192.168.29.82', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4128bced78b138de7704f091648addf4, findElement {using=xpath, value=//p[text()= "Invalid login"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Sitanshu\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55314}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55314/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4128bced78b138de7704f091648addf4
-	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+Command: [b4b71dff9d2d01b007a9bfbfdbda805b, findElement {using=xpath, value=//div[text()= 'ui header item mb5 light-black']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Sitanshu\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55937/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4b71dff9d2d01b007a9bfbfdbda805b
+	at sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -498,13 +454,12 @@ Session ID: 4128bced78b138de7704f091648addf4
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy40.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at com.sun.proxy.$Proxy40.getText(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:346)
+	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:342)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at stepDefinitions.Steps.user_should_not_be_logged_in_successfully(Steps.java:50)
+	at pages.CreateContactsPage.verifyCreateContactPageLoaded(CreateContactsPage.java:171)
+	at stepDefinitions.Steps.user_is_navigated_to_the_create_contact_page(Steps.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -547,19 +502,30 @@ Session ID: 4128bced78b138de7704f091648addf4
 </textarea>
       
       </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.stepTearDown(io.cucumber.java.Scenario)</span>
       <div>image
           <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../screenshots/embedded10.png' src="../screenshots/embedded10.png">
+<img data-featherlight='../screenshots/embedded8.png' src="../screenshots/embedded8.png">
     
     </div></div>
 </div>
       <div>
       </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User adds firstName "subhransu", middleName "sekhar", lastName "nayak", emailType "<emailType>", emailId "<emailId>", category "contact", status "Active", social_handle_type "facebook", social_handle_id "subhransu13@gmail.com", timezone "Asia/Kolkata", street "RBI Colony, Nayapalli", city "Bhubaneswar", province "Odisha", postal_code "751007", address_country "India", phone_type "Mobile", number "7978052018", phone_country "India", birth_day "17", birth_month "February", birth_year "1991", callblock "true", textblock "false", emailblock "false", company "Larsen & Toubro", tagName "friend", supervisor "Snigdha", assistant "", referrer ""</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User click on save button</span>
+      <div>Step skipped
+      </div>
+                  </div>
               </div>
-          </div>
+            </div>
         </div>
   </div>
 </div>
@@ -578,58 +544,22 @@ Session ID: 4128bced78b138de7704f091648addf4
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">@HappyPath</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@Examples</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@HappyPath</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:37:38 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>To verify the login functionality happy path</a>
-<div class="">
-<span class="badge badge-default">To verify cucumber functionalities.To verify the login functionality happy path</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@ErrorPath</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@ErrorPath</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@Examples</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -642,11 +572,21 @@ Session ID: 4128bced78b138de7704f091648addf4
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>21:37:57 PM</td>
+<td>16:17:25 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>To verify the login functionality error path</a>
+<a href="#" class="linked" test-id='1' id='2'>To add a new Contact</a>
 <div class="">
-<span class="badge badge-default">To verify cucumber functionalities.To verify the login functionality error path</span>
+<span class="badge badge-default">To verify cucumber functionalities.To add a new Contact</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:17:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>To add a new Contact</a>
+<div class="">
+<span class="badge badge-default">To verify cucumber functionalities.To add a new Contact</span>
 </div>
 </td>
 </tr>
@@ -694,11 +634,11 @@ Session ID: 4128bced78b138de7704f091648addf4
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>21:38:09 PM</td>
+<td>16:17:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='25'>Then User should not be logged in successfully</a>
+<a href="#" class="linked" test-id='1' id='19'>Then User is navigated to the create contact page</a>
 <div class="">
-<span class="badge badge-default">To verify cucumber functionalities.To verify the login functionality error path.Then User should not be logged in successfully</span>
+<span class="badge badge-default">To verify cucumber functionalities.To add a new Contact.Then User is navigated to the create contact page</span>
 </div>
 </td>
 </tr>

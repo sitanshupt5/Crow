@@ -14,8 +14,10 @@ import java.io.IOException;
 @CucumberOptions(
         features = {"src/main/java/features/Module1.feature"},
         glue = {"stepDefinitions"},
-        plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
-//
+        plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+        monochrome = false,
+        tags = "@Examples",
+        dryRun = false
 )
 
 public class ModuleRunner extends BaseUtils {
